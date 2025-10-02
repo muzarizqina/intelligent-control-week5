@@ -1,0 +1,9 @@
+Analisis Singkat Pelatihan DQN CartPole
+Pelatihan Deep Q-Network (DQN) pada CartPole menunjukkan hasil yang sangat fluktuatif. Nilai Total Reward melonjak drastis antara 15 hingga 40-an per episode. Fluktuasi ini adalah hal yang wajar dalam fase awal DRL dan disebabkan oleh strategi Epsilon-Greedy.
+
+Awalnya, agen banyak melakukan eksplorasi (aksi acak), sehingga reward tidak konsisten. Grafik secara keseluruhan belum stabil (konvergen), mengindikasikan agen masih intensif belajar sebelum nilai epsilon menurun dan fokus beralih ke eksploitasi (aksi terbaik).
+
+Diskusi Singkat Konsep DRL
+DQN unggul dibandingkan Q-Learning klasik karena menggunakan Neural Network untuk memecahkan masalah dengan ruang state yang kompleks atau kontinyu, yang tidak bisa ditangani oleh Q-Table.
+
+Namun, untuk mengadaptasi DQN ke sistem dinamis yang memiliki ruang aksi kontinyu, seperti drone atau robot industri, DQN memiliki keterbatasan karena dirancang untuk aksi diskrit. Dalam kasus ini, disarankan untuk beralih ke algoritma DRL lanjutan, seperti DDPG atau PPO.
